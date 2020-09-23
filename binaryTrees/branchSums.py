@@ -18,6 +18,5 @@ def branchSumsHelper(root: BinaryTree, branchSum: int, sumsArray: list):
 
 	if root.left is None and root.right is None:
 		sumsArray.append(branchSum)
-		return sumsArray
 
 	return sumsArray
