@@ -1,16 +1,13 @@
 import math
 
 def findThreeLargestNumbers(array):
-  largestNumbers = {
-    'first': -math.inf,
-    'second': -math.inf,
-    'third': -math.inf
-  }
-  
+  largestNumbers = [-math.inf, -math.inf, -math.inf]
   for number in array:
-    smallestLargeNumberIndex = min(largestNumbers, key=lambda k: largestNumbers[k])
-    
+    smallestLargeNumberIndex = largestNumbers.index(min(largestNumbers))
+
     if number > largestNumbers[smallestLargeNumberIndex]:
       largestNumbers[smallestLargeNumberIndex] = number
       
-  return sorted(list(largestNumbers.values()))
+  return sorted(largestNumbers)
+
+print(findThreeLargestNumbers([141, 1, 17, -7, -17, -27, 18, 541, 8, 7, 7]))
