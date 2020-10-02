@@ -1,21 +1,21 @@
 function bubbleSort(array: number[]) {
-  let swaps = 0;
-  let arrayIterations = array.length
+  let swaps = false;
+  let arrayIterations = array.length - 1
 
   while(true){ 
 
     for (let idx = 0; idx < arrayIterations; idx++) {
       if(array[idx] > array[idx + 1]) {
         swap(array, idx)
-        swaps += 1
-      }
-
-      if (idx === arrayIterations - 1 && swaps === 0) {
-          return array
+        swaps = true
       }
     }
 
-    swaps = 0
+    if (swaps === false) {
+      return array
+    }
+    
+    swaps = false
     arrayIterations -= 1
   }
 }
