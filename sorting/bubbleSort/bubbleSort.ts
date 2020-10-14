@@ -1,3 +1,7 @@
+// Average case
+// O(n^2) time | O(1) space
+// Best case
+// O(n) time | O(1) space
 function bubbleSort(array: number[]) {
   let swaps = false;
   let arrayIterations = array.length - 1

@@ -1,3 +1,7 @@
+// Average case
+// O(n^2) time | O(1) space
+// Best case
+// O(n) time | O(1) space
 function insertionSort(array: number[]) {
   for(let i = 1; i < array.length; i++) {
     for(let j = i - 1; j >= 0; j--) {
