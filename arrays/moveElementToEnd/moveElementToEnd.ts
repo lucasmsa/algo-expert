@@ -5,7 +5,7 @@ function moveElementToEnd(array: number[], toMove: number) {
 
   while (left < right) {
 
-    if (array[left] === toMove && array[right] === toMove) {   
+    if (array[right] === toMove) {   
       right -= 1
     }
 
