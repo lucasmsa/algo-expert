@@ -1,8 +1,10 @@
+# O(n) Time | O(1) Space
 def longestPeak(array):
   longest = 0
   i = 1
   
   while i < len(array) - 1:
+    
     if (array[i - 1] < array[i]) and (array[i + 1] < array[i]):
       lower_bound, upper_bound = i - 1, i + 1
       possible_solution = 3
@@ -16,6 +18,9 @@ def longestPeak(array):
         upper_bound += 1
         
       if possible_solution > longest: longest = possible_solution
+      
+      i = upper_bound
+      continue
     
     i += 1
   

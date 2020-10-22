@@ -1,4 +1,5 @@
-export function longestPeak(array: number[]) {
+// O(n) Time | O(1) Space
+function longestPeak(array: number[]) {
   let longest = 0, possibleLongest = 0, peak = false
 
   for (let i = 0; i < array.length; i++) {
