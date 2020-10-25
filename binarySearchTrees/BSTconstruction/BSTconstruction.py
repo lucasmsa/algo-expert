@@ -1,3 +1,5 @@
+# O(log(n)) Time | O(1) Space - Average
+# O(n) Time | O(1) Space - Worst, if the tree has only one branch
 class BST:
     def __init__(self, value):
         self.value = value
