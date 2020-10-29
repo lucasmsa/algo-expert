@@ -20,7 +20,8 @@ export function threeNumberSum(array: number[], targetSum: number): Triplet[] {
         } else {
           let triplet = [array[i], array[center], array[right]] as Triplet
           tripletsAnswer.push(triplet)
-         	center += 1
+          center += 1
+          right -= 1
       }
     }
   }
