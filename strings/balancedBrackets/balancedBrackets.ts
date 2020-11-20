@@ -1,20 +1,15 @@
+// O(n) Time | O(n) space -> Because of the stack
 export function balancedBrackets(string: string) {
   let openingBracket = /\[|\{|\(/
   let closingBrackets = /\}|\)|\]/
   let stack = [] as string[]
-  let stackPop: string | undefined
-
+	
   for (let i = 0; i < string.length; i++) {
+    if (openingBracket.test(string[i])) stack.push(string[i])
 
-    if (openingBracket.test(string[i])) {
-      stack.push(string[i])
-    }
-  
     else if (closingBrackets.test(string[i])) {
       if (!stack.length) return false
-      stackPop = stack.pop()
-      
-      switch (stackPop) {
+      switch (stack.pop()) {
         case "{":
           if (!(/\}/.test(string[i]))) return false
           break
@@ -27,7 +22,6 @@ export function balancedBrackets(string: string) {
       }
     }
   }
-	
-	if (stack.length) return false
+  if (stack.length) return false
   return true
 }
