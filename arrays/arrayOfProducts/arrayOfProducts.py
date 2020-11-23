@@ -1,4 +1,4 @@
-# O(n) Time | O(n) Space
+# O(n) Time | O(n) Space - With Division
 def arrayOfProducts(array):
     all_numbers_product = 1
     zero_exists = False
@@ -21,5 +21,3 @@ def arrayOfProducts(array):
             products_array.append(int(all_numbers_product/array[idx]))
                
     return products_array
-
-print(arrayOfProducts([8, 5, 1, 4, 2]))
