@@ -5,7 +5,7 @@ export function runLengthEncoding(string: string) {
 
 	for(let i = 1; i < string.length; i++) {
 		currentCharacter = string[i]
-		if (currentCharacter !== string[i-1] || characterOcurrences === 9) {
+		if (characterOcurrences === 9 || currentCharacter !== string[i-1]) {
         answer.push(`${characterOcurrences}${string[i-1]}`)
         characterOcurrences = 0
     }
