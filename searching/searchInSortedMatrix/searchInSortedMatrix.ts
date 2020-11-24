@@ -1,5 +1,6 @@
 type Range = [number, number];
 
+// O(n + m) Time | O(1) Space
 export function searchInSortedMatrix(matrix: number[][], target: number): Range {
   const numberOfRows = matrix.length-1, numberOfColumns = matrix[0].length-1
   let row = 0
