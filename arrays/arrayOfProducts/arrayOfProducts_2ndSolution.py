@@ -12,5 +12,5 @@ def arrayOfProducts(array):
     right_product *= array[idx]
     
   return products_array
-  
+
 print(arrayOfProducts([5, 1, 4, 2])) # [8, 40, 10, 20]
