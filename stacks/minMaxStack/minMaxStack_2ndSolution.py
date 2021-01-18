@@ -15,8 +15,7 @@ class MinMaxStack:
             "previous": popped_top['previous']['previous'],
             "minimum": popped_top['previous']['minimum'],
             "maximum": popped_top['previous']['maximum']
-        }
-            
+        }      
 
     def push(self, number):
         minimum_number = self.getMin()
