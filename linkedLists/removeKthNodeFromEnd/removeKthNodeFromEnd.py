@@ -3,7 +3,8 @@ class LinkedList:
     def __init__(self, value):
         self.value = value
         self.next = None
-		
+
+# O(n) Time | O(1) Space
 def removeKthNodeFromEnd(head, k):
 	current_node = head
 	linked_list_size = 0
