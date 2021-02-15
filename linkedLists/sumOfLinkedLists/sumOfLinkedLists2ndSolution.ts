@@ -8,7 +8,7 @@ export class LinkedList {
   }
 }
 
-// O(max(n + m)) Time | O(digits(n + m)), where n represents the length of the first linked list
+// O(max(n + m)) Time | O(max(n + m)), where n represents the length of the first linked list
 // and m the length of the second. Difference from this solution to the 1st one is that only 
 // one iteration through both linked lists was needed
 export function sumOfLinkedLists(linkedListOne: LinkedList, linkedListTwo: LinkedList) {
