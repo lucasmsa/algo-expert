@@ -8,7 +8,6 @@ function exploreTreeNode(array: number[], left: number, right: number) {
   if (left > right) return null
   let middleIdx = Math.floor((left + right) / 2)
   let bst = new BST(array[middleIdx])
-  bst.insert(array[middleIdx])
   bst.left = exploreTreeNode(array, left, middleIdx - 1)
   bst.right = exploreTreeNode(array, middleIdx + 1, right)
   return bst
