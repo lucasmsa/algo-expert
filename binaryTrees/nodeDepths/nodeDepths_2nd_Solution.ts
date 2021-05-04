@@ -19,6 +19,6 @@ function nodeDepths(root: BinaryTree): number {
 function nodeDepthsHelper(root: BinaryTree | null, depth: number): number {
   if (root === null) return 0
 
-  return depth + nodeDepthsHelper(root.left, depth + 1) + 
-          nodeDepthsHelper(root.right, depth + 1)
+  return depth + nodeDepthsHelper(root.left, depth + 1) +
+    nodeDepthsHelper(root.right, depth + 1)
 }
