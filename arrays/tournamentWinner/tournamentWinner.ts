@@ -3,7 +3,7 @@ interface ILanguageScore {
 }
 
 // O(n) Time | O(T) Space
-// Where n is the number of matches played and T is the number of Teams
+// Where n is the number of matches played and T is the number of Winning Teams
 function tournamentWinner(competitions: string[][], results: number[]) {
   const languageScore = {} as ILanguageScore
   for (let idx = 0; idx < results.length; idx++) {
