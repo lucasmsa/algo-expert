@@ -1,4 +1,5 @@
-# O(m + n) Time | O(m) Space -> Where m is the size of the characters string and n is the size of the document
+# O(m + n) Time | O(c) Space -> Where m is the size of the characters string and n is the size of the document
+# c is the number of unique characters in the characters string
 def generateDocument(characters, document):
     characters_frequencies = {}
     for character in characters:
