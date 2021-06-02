@@ -10,7 +10,6 @@ def sortedSquaredArray(array):
 
     checkRemainingNegativeNumbers(
         negative_numbers_array, sorted_squared_array)
-
     return sorted_squared_array
 
 
@@ -23,4 +22,3 @@ def fetchNegativeArrayNumbers(idx, array, negative_numbers_array):
 def checkRemainingNegativeNumbers(negative_numbers_array, sortedSquaredArray):
     while negative_numbers_array:
         sortedSquaredArray.append(pow(negative_numbers_array.pop(0), 2))
-    return sortedSquaredArray
