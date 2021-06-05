@@ -16,7 +16,7 @@ class Node:
             for child in graph.children:
                 array.append(child.name)
                 queue.append(child)
-                
+
             graph = queue.pop(0)
-                
+
         return array
